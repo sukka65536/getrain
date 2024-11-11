@@ -33,8 +33,10 @@ function createItem(name, line, distance) {
     const item = `
     <div class="result-item">
         <div class="result-item-upper">
-            <div class="result-item-name">${name}</div>
-            <div class="result-item-line">${line}</div>
+            <div class="result-item-info">
+                <div class="result-item-name">${name}</div>
+                <div class="result-item-line">${line}</div>
+            </div>
             <div class="result-item-distance">${distance}</div>
         </div>
         <div class="result-item-lower">
