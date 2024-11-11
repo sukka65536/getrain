@@ -1,7 +1,9 @@
 .result-item {
-    height: 100px;
+    height: 120px;
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0 #ddd;
 }
 
 .result-item-upper {
@@ -13,7 +15,7 @@
 .result-item-lower {
     height: 60%;
     width: 100%;
-    background-color: #ddd;
+    background-color: #eee;
     border-radius: 0 0 20px 20px;
 }
 
@@ -25,19 +27,25 @@
 .result-item-name {
     height: 50%;
     width: 100%;
-    background-color: #ccc;
+    background-color: #aaf;
     border-radius: 20px 0 0 0;
+    text-indent: 1em;
+    line-height: 24px;
 }
 
 .result-item-line {
     height: 50%;
     width: 100%;
-    background-color: #bbb;
+    background-color: #ccf;
+    text-indent: 1em;
+    line-height: 24px;
 }
 
 .result-item-distance {
     height: 100%;
     width: 20%;
-    background-color: #ccc;
+    background-color: #bfb;
     border-radius: 0 20px 0 0;
+    text-align: center;
+    line-height: 48px;
 }

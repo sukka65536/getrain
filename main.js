@@ -45,3 +45,6 @@ function createItem(name, line, distance) {
     `
     document.getElementById("result").innerHTML += item;
 }
+
+console.log("Copyright (C) 2006 - 2021 HeartRails Inc. Some Rights Reserved.\n"
+    + "https://www.heartrails.com/");
