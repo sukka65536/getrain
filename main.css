@@ -1,0 +1,38 @@
+.result-item {
+    height: 80px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.result-item-upper {
+    display: flex;
+    height: 30%;
+    width: 100%;
+}
+
+.result-item-lower {
+    height: 70%;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 0 0 20px 20px;
+}
+
+.result-item-name {
+    height: 100%;
+    width: 30%;
+    background-color: #ccc;
+    border-radius: 20px 0 0 0;
+}
+
+.result-item-line {
+    height: 100%;
+    width: 40%;
+    background-color: #bbb;
+}
+
+.result-item-distance {
+    height: 100%;
+    width: 30%;
+    background-color: #ccc;
+    border-radius: 0 20px 0 0;
+}
