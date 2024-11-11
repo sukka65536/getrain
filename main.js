@@ -2,7 +2,7 @@ window.onload = function () {
     navigator.geolocation.getCurrentPosition(test);
 
     function test(position) {
-        console.log(position.coords.latitude);
-        console.log(position.coords.longitude);
+        document.getElementById('out1').innerHTML = position.coords.latitude;
+        document.getElementById('out2').innerHTML = position.coords.longitude;
     }
 }
