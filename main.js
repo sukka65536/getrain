@@ -6,11 +6,24 @@ window.onload = function () {
         document.getElementById('out2').innerHTML = "y:" + position.coords.latitude;
         const x = position.coords.longitude;
         const y = position.coords.latitude;
-        document.getElementById('out3').innerHTML = callGetStationsAPI(x, y);
+        callGetStationsAPI(x, y);
     }
 }
 
-async function callGetStationsAPI(x, y) {
-    const res = await fetch("https://express.heartrails.com/api/json?method=getStations&x=" + x + "&y=" + y);
-    return await res.json();
+function callGetStationsAPI(x, y) {
+    const url = "https://express.heartrails.com/api/json?method=getStations&x=" + x + "&y=" + y;
+    fetch(url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((result) => {
+            example(result);
+        })
+        .catch((e) => {
+            console.log(e)
+        })
 };
+
+function example(r) {
+    document.getElementById('out3').innerHTML = JSON.stringify(r);
+}
