@@ -1,3 +1,19 @@
+#get-location {
+    height: 60px;
+    width: 80%;
+    background-color: #aaf;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0 #ddd;
+    font-size: 150%;
+    text-align: center;
+    line-height: 60px;
+}
+
+#get-location:hover {
+    opacity: 0.7;
+}
+
 .result-item {
     height: 120px;
     width: 80%;

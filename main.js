@@ -1,12 +1,19 @@
 window.onload = function () {
-    navigator.geolocation.getCurrentPosition(getNearStations);
+    let isFirstGet = true;
+    document.getElementById("get-location").addEventListener("click", function() {
+        if (isFirstGet) {
+            isFirstGet = false;
+            this.innerHTML = "位置情報を更新";
+        }
+        navigator.geolocation.getCurrentPosition(getNearStations);
+    });
+}
 
-    function getNearStations(position) {
-        const x = position.coords.longitude;
-        const y = position.coords.latitude;
-        //callGetStationsAPI(141.5968, 42.6397);
-        callGetStationsAPI(x, y);
-    }
+function getNearStations(position) {
+    const x = position.coords.longitude;
+    const y = position.coords.latitude;
+    //callGetStationsAPI(141.5968, 42.6397);
+    callGetStationsAPI(x, y);
 }
 
 function callGetStationsAPI(x, y) {
