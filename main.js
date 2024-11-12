@@ -31,6 +31,7 @@ function callGetStationsAPI(x, y) {
 };
 
 function displayResult(result) {
+    document.getElementById("result").innerHTML = "";
     result.response.station.forEach(s => {
         createItem(s.name, s.line, s.distance);
     });
